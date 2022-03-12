@@ -1,0 +1,65 @@
+header{
+    height: 150vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.header__socials{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 5rem;
+    width: 20vw;
+    margin-left: 40vw;
+}
+
+.header__socials article{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+}
+
+.header__socials article label{
+    opacity: 0;
+}
+
+.header__socials article:hover > label{
+    animation-name: drop;
+    animation-duration: 2s;
+}
+
+@keyframes drop {
+    0%{ opacity: 0;}
+    70%{opacity: 1;}
+}
+
+.me{
+    background: linear-gradient(var(--color-primary), black);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 8rem 1rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        height: 100vh;
+    }
+}
