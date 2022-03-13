@@ -102,14 +102,18 @@
 }
 
 @media screen and (max-width: 600px){
+    #about{
+        height: 210vh;
+    }
+
     .about__me{
         width: 65%;
         margin: 0 auto 3rem;
     }
 
     .about__cards{
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .about__content{

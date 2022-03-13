@@ -39,8 +39,25 @@
 }
 
 @media screen and (max-width: 1024px) {
+    #portifolio{
+        height: 210vh;
+        margin-left: 0;
+        margin-right: 10rem;
+    }
+
     .portifolio__container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #portifolio{
+        height: 500vh;
+    }
+
+    .portifolio__container{
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -39,7 +39,26 @@
 
 .about__container{
     margin-left: 40%;
-    display: grid;
-    grid-template-columns: auto;
     margin-top: 10vh;
+}
+
+@media screen and (max-width: 600px) {
+    #footer{
+        margin: 0;
+        padding: 0;
+    }
+
+    .links__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .socials__container{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__container{
+        margin: 0;
+    }
 }
