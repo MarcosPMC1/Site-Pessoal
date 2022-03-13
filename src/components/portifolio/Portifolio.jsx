@@ -9,7 +9,7 @@ const Portifolio = () => {
       <div className='container portifolio__container'> 
         <article className='portifolio__item'>
           <div className='portifolio__item-image'>
-            <img src='../../assets/portifolio.png' alt='Imagem Portifolio'  />
+            <img src={require('../../assets/portifolio.png')} alt='Imagem Portifolio'  />
           </div>
           <h3>Projeto #1</h3>
           <div className='portifolio__links'>
@@ -19,7 +19,7 @@ const Portifolio = () => {
         </article>
         <article className='portifolio__item'>
           <div className='portifolio__item-image'>
-            <img src='../../assets/portifolio.png' alt='Imagem Portifolio'  />
+            <img src={require('../../assets/portifolio.png')} alt='Imagem Portifolio'  />
           </div>
           <h3>Projeto #2</h3>
           <div className='portifolio__links'>
@@ -29,7 +29,7 @@ const Portifolio = () => {
         </article>
         <article className='portifolio__item'>
           <div className='portifolio__item-image'>
-            <img src='src/assets/portifolio.png' alt='Imagem Portifolio'  />
+            <img src={require('../../assets/portifolio.png')} alt='Imagem Portifolio'  />
           </div>
           <h3>Projeto #3</h3>
           <div className='portifolio__links'>
@@ -39,7 +39,7 @@ const Portifolio = () => {
         </article>
         <article className='portifolio__item'>
           <div className='portifolio__item-image'>
-            <img src='../../assets/portifolio.png' alt='Imagem Portifolio'  />
+            <img src={require('../../assets/portifolio.png')} alt='Imagem Portifolio'  />
           </div>
           <h3>Projeto #3</h3>
           <div className='portifolio__links'>
@@ -49,7 +49,7 @@ const Portifolio = () => {
         </article>
         <article className='portifolio__item'>
           <div className='portifolio__item-image'>
-            <img src='../../assets/portifolio.png' alt='Imagem Portifolio' />
+            <img src={require('../../assets/portifolio.png')} alt='Imagem Portifolio' />
           </div>
           <h3>Projeto #3</h3>
           <div className='portifolio__links'>
@@ -59,7 +59,7 @@ const Portifolio = () => {
         </article>
         <article className='portifolio__item'>
           <div className='portifolio__item-image'>
-            <img src='../../assets/portifolio.png' alt='Imagem Portifolio' />
+            <img src={require('../../assets/portifolio.png')} alt='Imagem Portifolio' />
           </div>
           <h3>Projeto #3</h3>
           <div className='portifolio__links'>
