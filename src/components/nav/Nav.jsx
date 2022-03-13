@@ -8,10 +8,10 @@ import {BiMessageDetail} from 'react-icons/bi'
 import { useState } from 'react'
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
+  const [activeNav, setActiveNav] = useState('#header')
   return (
     <nav>
-      <a href='#' onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
+      <a href='#header' onClick={() => setActiveNav('#header')} className={activeNav === '#hearder' ? 'active' : ''}><AiOutlineHome /></a>
       <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
       <a href='#experience' onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BsJournalCode /></a>
       <a href='#portifolio' onClick={() => setActiveNav('#portifolio')} className={activeNav === '#portifolio' ? 'active' : ''}><MdOutlineHandyman /></a>

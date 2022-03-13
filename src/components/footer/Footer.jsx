@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <section id='footer'>
       <div className='links__container'>
-        <a href="#">Home</a>
+        <a href="#header">Home</a>
         <a href="#about">Sobre</a>
         <a href="#experience">Habilidades</a>
         <a href="#portifolio">Projetos</a>
