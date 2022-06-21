@@ -32,6 +32,11 @@
     animation-delay: 1s;
 }
 
+button{
+    text-decoration: none;
+    background: none;
+}
+
 @keyframes typing {
     from{
         opacity: 0;
