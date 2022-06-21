@@ -1,36 +1,40 @@
 import React from 'react'
 import "./header.css"
-import CTA from './CTA'
-import ME from '../../assets/me.png'
-import {AiOutlineLinkedin} from 'react-icons/ai'
-import {AiOutlineGithub} from 'react-icons/ai'
+import TypeAnimation from 'react-type-animation'
 
 const Header = () => {
+
   return (
     <header id='header'>
-      <div className='container header__container'>
-        <h5>Hello I`m</h5>
-        <h1>Marcos Cardoso</h1>
-        <h5 className="text-light">Desenvolvedor Web</h5>
-        <CTA />
-
-        <div className='header__socials'>
-          <article>
-            <a href="https://www.linkedin.com/in/marcos-cardoso-1931161b0/"><AiOutlineLinkedin size={64} /></a>
-            <label>Linkedin</label>
-          </article>
-          <article>
-            <a href="https://github.com/MarcosPMC1"><AiOutlineGithub size={64} /></a>
-            <label>Github</label>
-          </article>
-        </div>
-
-        <div className='me'>
-          <img src={ME} alt="me" />
-        </div>
+      <div className='screen'>
+        <TypeAnimation
+          cursor={false}
+          sequence={['Starting...', 500, 'Loading...']}
+          wrapper="h3"
+        />
+        <TypeAnimation cursor={false} sequence={['', 2000, '.']} wrapper='h3' />
+        <TypeAnimation cursor={false} sequence={['', 2500, '.']} wrapper='h3' />
+        <TypeAnimation cursor={false} sequence={['', 2750, '.']} wrapper='h3' />
+        <TypeAnimation
+          cursor={false}
+          sequence={['', 3000, 'Hello!']}
+          wrapper="h3"
+        />
+        <TypeAnimation
+          cursor={false}
+          sequence={['', 4000, 'Name: Marcos Cardoso']}
+          wrapper="h3"
+        />
+        <TypeAnimation
+          cursor={false}
+          sequence={['', 5500, 'Age: 18']}
+          wrapper="h3"
+        />
+        <span className='typing'></span>
+        <button><a href="#about"><h3>Continuar</h3></a></button>
       </div>
     </header>
-  )
+  );
 }
 
 export default Header
